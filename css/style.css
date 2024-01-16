@@ -254,6 +254,20 @@ button {
 
 }
 
+.destination-image-grid .card-img {
+    position: relative;
+}
+
+.image-title {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    color: #FFF;
+    font-size: 1.8rem;
+    transform: translate(-50%, -50%);
+}
+
 .image-item-1 {
     grid-column: 1 / 7;
 }
@@ -757,8 +771,12 @@ footer {
 
     .section-left-container,
     .section-right-container {
-        width: 100%;
+        width: 90%;
         min-height: 0;
+    }
+
+    .section-right-container img {
+        width: 80%;
     }
 
     .place-text-container,
