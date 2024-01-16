@@ -15,12 +15,94 @@
 }
 
 /* CSS Reuse Styles */
+.container {
+    max-width: 1440px;
+    margin: 3rem auto;
+    padding: 2rem 10%;
+}
 
 /* header start */
 
 /* header End */
 
 /* main section start */
+
+/* subscribe section */
+.subcribe-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+
+.newsletter-card {
+    width: 40%;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1.2rem 1rem;
+}
+.newsletter-title {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.newsletter-card p {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+.subscribe-form {
+    margin-top: 1rem;
+}
+
+.subscribe-form input {
+    display: block;
+    background-color: rgba(19, 19, 24, 0.05);
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 0.9rem;
+    padding: 15px 20px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    min-width: 300px;
+    border: none;
+    outline: 0;
+}
+
+.subscribe-form input[type = "submit"]{
+    background-color: var(--primary-color);
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.image-card {
+    width: 55%;
+    position: relative;
+}
+
+.image-card img {
+    width: 100%;
+}
+
+.discount-badge {
+    background-color: var(--primary-color);
+    color: #FFF;
+    border-radius: 8px;
+    width: 180px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: absolute;
+    bottom: 48px;
+    right: 0;
+    transform: rotate(-35deg);
+}
 
 /* main section End */
 
@@ -98,3 +180,40 @@ footer {
 
 
 /*  responsive media queries  */
+
+/* small devices */
+@media screen and (max-width: 600px) {
+    .subcribe-container {
+        flex-direction: column;
+    }
+
+    .newsletter-card {
+        width: 100%;
+    }
+    .subscribe-form input {
+        width: 80%;
+    }
+
+    .image-card  {
+        width: 100%;
+    }
+}
+
+/* medium devices */
+@media screen and (min-width: 600px) and (max-width:992px) {
+    .subcribe-container {
+        flex-direction: column;
+    }
+
+    .newsletter-card {
+        width: 100%;
+    }
+
+    .subscribe-form input {
+        width: 90%;
+    }
+
+    .image-card  {
+        width: 100%;
+    }
+}
