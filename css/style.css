@@ -27,11 +27,60 @@
     font-weight: 400;
 }
 
+.section-header {
+    max-width: 580px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 /* header start */
 
 /* header End */
 
 /* main section start */
+
+/* why choose us section */
+
+.why-choose .sections-cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.why-choose .sections-cards .card {
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.card-item-1 {
+    background-color: rgba(251, 181, 99, 0.05);
+    grid-column: 1 / 4;
+}
+
+.card-item-2 {
+    background-color: rgba(41, 206, 246, 0.05);
+    grid-column: 4 / 7;
+}
+
+.card-item-3 {
+    background-color: rgba(233, 68, 68, 0.05);
+    grid-column: 3 / 6;
+}
+
+.why-choose .sections-cards .card img {
+    width: 50px;
+    height: 50px;
+}
+
+.why-choose .card .card-title {
+    font-size: 1.2rem;
+    color: #131313;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+
 
 /* place section */
 .place-section {
@@ -253,42 +302,61 @@ footer {
 
 /* small devices */
 @media screen and (max-width: 600px) {
-
-    .place-section,
-    .subcribe-container {
-        flex-direction: column;
+    .why-choose .sections-cards {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
     }
 
-    .place-text-container,
-    .newsletter-card,
-    .video-container {
-        width: 100%;
+    .card-item-1 {
+        grid-column: 3 / 6;
     }
 
-    .subscribe-form input {
-        width: 80%;
+    .card-item-2 {
+        background-color: rgba(41, 206, 246, 0.05);
+        grid-column: 3 / 6;
     }
 
-    .image-card {
-        width: 100%;
-    }
-}
+    .card-item-3 {
+        background-color: rgba(233, 68, 68, 0.05);
+        grid-column: 3 / 6;
 
-/* medium devices */
-@media screen and (min-width: 600px) and (max-width:992px) {
-    .subcribe-container {
-        flex-direction: column;
+
+        .place-section,
+        .subcribe-container {
+            flex-direction: column;
+        }
+
+        .place-text-container,
+        .newsletter-card,
+        .video-container {
+            width: 100%;
+        }
+
+        .subscribe-form input {
+            width: 80%;
+        }
+
+        .image-card {
+            width: 100%;
+        }
     }
 
-    .newsletter-card {
-        width: 100%;
-    }
+    /* medium devices */
+    @media screen and (min-width: 600px) and (max-width:992px) {
+        .subcribe-container {
+            flex-direction: column;
+        }
 
-    .subscribe-form input {
-        width: 90%;
-    }
+        .newsletter-card {
+            width: 100%;
+        }
 
-    .image-card {
-        width: 100%;
+        .subscribe-form input {
+            width: 90%;
+        }
+
+        .image-card {
+            width: 100%;
+        }
     }
-}
