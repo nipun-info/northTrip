@@ -9,7 +9,10 @@
 }
 
 /* CSS Variables */
-
+:root {
+    --primary-color: #FF5400;
+    --secondary-color: #131318;
+}
 
 /* CSS Reuse Styles */
 
@@ -26,7 +29,66 @@
 
 /* Footer End */
 
+footer {
+    background-color: rgba(19, 19, 24, 0.05);
+}
+.footer-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    text-align: center;
+}
 
+.footer-top {
+    padding: 0 3rem;
+}
+
+.footer-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer-brand h3 {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.footer-brand h3 span {
+    color: var(--primary-color);
+}
+.footer-txt {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.footer-social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-social-icon i {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.footer-social-icon i:hover{
+    color: var(--primary-color);
+}
+
+.footer-bottom p {
+    margin-top: 1rem;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
 
 
 
