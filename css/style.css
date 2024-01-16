@@ -17,8 +17,12 @@
 /* CSS Reuse Styles */
 .container {
     max-width: 1440px;
-    margin: 3rem auto;
+    margin: 1.5rem auto;
     padding: 2rem 10%;
+}
+
+img {
+    object-fit: cover;
 }
 
 .txt-gray {
@@ -52,7 +56,6 @@
     font-weight: 700;
 }
 
-
 .btn-primary {
     background-color: var(--primary-color);
     color: #FFF;
@@ -67,7 +70,6 @@
 
 /* header start */
 .header-container {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
