@@ -282,7 +282,28 @@ button {
     grid-column: 5 / 13;
 }
 
+/* bonus */
+.bonus-card-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 2rem;
+}
 
+.bonus-card-container img {
+    width: 100%;
+}
+
+.bonus-card-container .card-info {
+    background-color: var(--primary-color);
+    max-width: 335px;
+    padding: 12px;
+    color: #FFF;
+    margin-top: -5px;
+}
+
+.bonus-card-container .card-info h3 {
+    margin: 10px 0;
+}
 
 
 /* why choose us section */
@@ -330,12 +351,6 @@ button {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.section-deal-cards .deal-card-2 {
-    background-color: red;
-    transform: rotate(90 deg);
-
 }
 
 .section-deal-cards .card {
@@ -596,10 +611,6 @@ footer {
 
 
 
-
-
-
-
 /*  responsive media queries  */
 
 /* small devices */
@@ -645,6 +656,7 @@ footer {
 
     .service-section,
     .place-section,
+    .bonus-card-container,
     .subcribe-container {
         flex-direction: column;
     }
@@ -666,7 +678,7 @@ footer {
     .image-item-3,
     .image-item-4,
     .image-item-5,
-    .image-item-8,
+    .image-item-6,
     .image-item-7 {
         grid-column: 4 / 8;
     }
@@ -689,7 +701,13 @@ footer {
         grid-column: 3 / 6;
     }
 
+    .bonus-card-container .card-info {
+        max-width: 600px;
+    }
 
+    .deal-card-2 {
+        margin: 6rem 0 2rem;
+    }
 
     .service-left-container,
     .section-right-container,
@@ -747,6 +765,10 @@ footer {
     .newsletter-card,
     .video-container {
         width: 100%;
+    }
+
+    .deal-card-2 {
+        margin: 6rem 0 2rem;
     }
 
     .subscribe-form input {
